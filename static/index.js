@@ -127,7 +127,7 @@
         _gameScore = 0;
         _gameOver = false;
         _gameStart = false;
-        _gameTimeNum = 20;
+        _gameTimeNum = 30;
         GameTimeLayer.innerHTML = creatTimeText(_gameTimeNum);
         countBlockSize();
         refreshGameLayer(GameLayer[0]);
@@ -345,7 +345,7 @@
         let date2 = new Date();
         deviation_time = (date2.getTime() - _date1.getTime())
         if (deviation_time > 23000) {
-            return '倒计时多了' + ((deviation_time / 1000) - 20).toFixed(2) + "s";
+            return '倒计时多了' + ((deviation_time / 1000) - 30).toFixed(2) + "s";
         }
         SubmitResults();
         if (score <= 49) return '爛欸';
