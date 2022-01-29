@@ -181,7 +181,7 @@
     w.gameTime = function() {
         _gameTimeNum--;
         if (_gameTimeNum <= 0) {
-            GameTimeLayer.innerHTML = '&nbsp;&nbsp;&nbsp;&nbsp;时间到！';
+            GameTimeLayer.innerHTML = '&nbsp;&nbsp;&nbsp;&nbsp;時間到！';
             gameOver();
             GameLayerBG.className += ' flash';
             createjs.Sound.play("end");
@@ -348,11 +348,11 @@
             return '倒计时多了' + ((deviation_time / 1000) - 20).toFixed(2) + "s";
         }
         SubmitResults();
-        if (score <= 49) return '逊呐';
-        if (score <= 99) return '哼哼哼';
-        if (score <= 149) return '你是一个一个一个';
-        if (score <= 199) return '哼哼哼啊啊啊啊啊';
-        return '都撅烂了罢（恼';
+        if (score <= 49) return '爛欸';
+        if (score <= 99) return '還行啦';
+        if (score <= 149) return '還不錯嘛你';
+        if (score <= 199) return '唉呦!很勇嘛( ͡~ ͜ʖ ͡°)';
+        return '認真一點好不好';
     }
 
     w.toStr = function(obj) {
@@ -446,5 +446,5 @@
         gameTapEvent(fakeEvent);
     }
 
-    console.log("不修改，好嘛？乱传又有什么用呢？(ˉ▽ˉ；)...");
+    console.log("我看你也不會啊");
 }) (window);
